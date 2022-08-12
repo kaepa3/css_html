@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <header class="header item">
+      <h1>
+        <a href="#">
+          <img class="logo" src="image/logo.png" alt="SAMPLE SITE 2">
+        </a>
+      </h1>
+      <nav class="nav">
+        <ul>
+          <li class="nav-item"><a href="#">HOME</a></li>
+          <li class="nav-item"><a href="#">ABOUT</a></li>
+          <li class="nav-item"><a href="#">MAINDISH</a></li>
+          <li class="nav-item"><a href="#">BREAK TIME</a></li>
+          <li class="nav-item"><a href="#">COLUMN</a></li>
+          <li class="nav-item"><a href="#">OTHER</a></li>
+        </ul>
+      </nav>
+    </header>
     <section class="item item-l item-maindish">
       <a href="#" >
         <img class="image" src="./image/image_L_1.jpg" alt="メインディッシュ">
@@ -123,14 +140,16 @@
         consecterur adipisicing elit. sed do eiusmod tempor</p>
       </a>
     </section>
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.js"></script>
-  <script>
-    new Masonry('body', {
-      itemSelector: '.item',
-      columnWidth: 180,
-      gutter: 4
-    });
-  </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.js"></script>
+    <script>
+      window.onload = function(){
+        new Masonry('body', {
+          itemSelector: '.item',
+          columnWidth: 180,
+          gutter: 4
+        });
+      };
+    </script>
 
   </body>
 </html>
