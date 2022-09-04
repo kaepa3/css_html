@@ -235,7 +235,7 @@ body {
 }
 
 .contact-form input[type="text"]:focus,
-.contact-form textarea:focus{
+.contact-form textarea:focus {
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
 }
 
@@ -243,8 +243,8 @@ body {
   height: 150px;
 }
 
-.contact-form input[type=submit]{
-  display:block;
+.contact-form input[type="submit"] {
+  display: block;
   width: 200px;
   margin: 40px auto 0;
   padding: 15px;
@@ -255,11 +255,20 @@ body {
   cursor: pointer;
 }
 
-.contact-form input[type=submit]:hover{
+.contact-form input[type="submit"]:hover {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-.footer{
+.footer {
   padding: 12px 0;
   font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+  .site-title-sub::before,
+  .site-title-sub::after {
+    display:block;
+    width: 80%;
+    margin: 10px auto;
+  }
 }
